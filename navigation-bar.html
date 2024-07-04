@@ -111,8 +111,38 @@ url:https://www.freecodecamp.org/news/how-to-build-a-responsive-navigation-bar-w
                     </ul>
                   </div>
                 </li>
-  
-                    <li>
+                <!-- markup truncated for brevity-->
+                <li>
+                  <button
+                    class="nav-link dropdown-btn"
+                    data-dropdown="dropdown2"
+                    aria-expanded="false"
+                  >
+                    Discover
+                    <i class="bx bx-chevron-down" aria-hidden="true"></i>
+                  </button>
+                  <div id="dropdown2" class="dropdown">
+                    <ul aria-labelledby="categories-title">
+                      <span id="categories-title" class="dropdown-link-title">Browse Categories</span>
+                      <li>
+                        <a class="dropdown-link" href="#branding">Branding</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-link" href="#illustrations">Illustration</a>
+                      </li>
+                    </ul>
+                    <ul aria-labelledby="download-title">
+                      <span id="download-title" class="dropdown-link-title">Download App</span>
+                      <li>
+                        <a class="dropdown-link" href="#mac-windows">MacOS & Windows</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-link" href="#linux">Linux</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                      <!--<li>
                         <button 
                           class="nav-link dropdown-btn" 
                           data-dropdown="dropdown2" 
@@ -121,7 +151,7 @@ url:https://www.freecodecamp.org/news/how-to-build-a-responsive-navigation-bar-w
                           <i class="bx bx-chevron-down" aria-hidden="true"></i>
                         </button>
                         <div id="dropdown2" class="dropdown"></div>
-                    </li>
+                    </li>-->
                     <li><a class="nav-link" href="/">Jobs</a></li>
                     <li><a class="nav-link" href="/">Livestream</a></li>
                     <li><a class="nav-link" href="/">About</a></li>
