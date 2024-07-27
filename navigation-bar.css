@@ -43,8 +43,6 @@ button {
   color: inherit;
 }
 
-
-/*Next, add some reusable styles.*/
 .btn {
   display: block;
   background-color: var(--primary-color);
@@ -80,8 +78,6 @@ button {
   height: 90px;
   padding: 1.2rem 3rem;
 }
-
-/*Here's the markup to style the navigation bar container*/
 
 .menu {
   position: relative;
@@ -127,8 +123,6 @@ button {
   display: flex;
   align-items: center;
 }
-
-/*it will be hidden using a combination of visibility and opacity properties. The idea is to show the menu only when the individual button has been clicked.*/
 
 .dropdown {
   display: flex;
@@ -180,7 +174,6 @@ button {
   color: var(--medium-grey);
 }
 
-/*Next, add the styling for the search input, button, and profile image and then hide the hamburger button on desktop screens.*/
 .right-container {
   display: flex;
   align-items: center;
@@ -206,10 +199,11 @@ button {
   border: var(--border);
 }
 
-.search .search-icon {
+.search .bx-search {
   position: absolute;
   left: 10px;
   top: 50%;
+  font-size: 1.3rem;
   transform: translateY(-50%);
   opacity: 0.6;
 }
@@ -221,18 +215,13 @@ button {
   font-size: 1.9rem;
 }
 
-/* To finish up the styling, add the media query styling: */
 @media (max-width: 1100px) {
   #hamburger {
     display: block;
-    position: relative;
-    left: calc(100vw - 9rem);
   }
 
   .container {
     padding: 1.2rem;
-    margin-right: 3rem;
-    margin: auto!important;
   }
 
   .menu {
@@ -287,6 +276,10 @@ button {
     font-weight: 600;
     font-size: 1.2rem;
     margin: 0;
+  }
+
+  .menu-bar li:first-child .dropdown {
+    min-width: 100%;
   }
 
   .menu-bar > li:not(:last-child) {
